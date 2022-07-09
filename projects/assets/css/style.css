@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+@import url(_reset.css);
+@import url(_var.css);
+
+body {
+  font-family: var(--font-txt);
+}
+
+.header {
+  background-color: var(--light-green);
+  color: black;
+  font-size: 5rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header h1 {
+  margin-left: 1rem;
+}
+
+body {
+  background-color: var(--silver-chalice);
+}
+
+.git-link {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+  right: 2rem;
+  top: 1rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.project {
+  margin-left: 1rem;
+  width: 20rem;
+  height: 15rem;
+  background-color: var(--light-green);
+  padding: .2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.project-icon {
+  width: 19rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.project-btn {
+  font-family: var(--font-txt);
+  font-size: 1rem;
+  background-color: var(--silver-chalice);
+  border: none;
+  border-radius: 5px;
+}
+
+.project-btn a {
+  text-decoration: none;
+  color: black;
+}

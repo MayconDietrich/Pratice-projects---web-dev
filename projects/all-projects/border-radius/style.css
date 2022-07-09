@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  overflow: hidden;
+  background-color: #564256;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sec-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 30rem;
+
+  position:relative;
+}
+
+.box {
+  width: 26rem;
+  height: 26rem;
+  background-color: #fc814a;  
+}
+
+input {
+  position:absolute;
+  border: 1px solid black;
+  font-family: 'Roboto', sans-serif;
+  width: 2rem;
+  padding: 5px;
+}
+
+input:nth-child(1) {
+  top:0;
+  left:0;    
+}
+
+input:nth-child(2) {
+  top:0;
+  right:0;
+}
+
+input:nth-child(3) {
+  bottom:0;
+  left:0;
+}
+
+input:nth-child(4) {
+  bottom:0;
+  right:0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.btnChangeAll {
+  position: fixed;
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+  top: 10rem;
+  right: 10rem;
+  color: white;
+}
+/* e8e8e8 */
