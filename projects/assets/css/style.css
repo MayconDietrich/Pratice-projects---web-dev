@@ -1,74 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Yellowtail&display=swap');
 @import url(_reset.css);
 @import url(_var.css);
+@import url(_responsive.css);
+
+html {
+  height: 100vh;
+}
 
 body {
   font-family: var(--font-txt);
+  background-color: var(--light-yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
   background-color: var(--light-green);
-  color: black;
-  font-size: 5rem;
-  height: 8rem;
+  color: var(--black);
+  width: 100%;
+}
+
+.header-div {
+  margin: 0 auto;
+  height: 2rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .9rem;
+  padding-inline: 5rem;
+  border-bottom: 3px solid var(--purple);
+}
+
+.header-div div {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  font-family: var(--font-title);
+  font-size: 2rem;
 }
 
 .header h1 {
   margin-left: 1rem;
 }
 
-body {
-  background-color: var(--silver-chalice);
-}
-
 .git-link {
   text-decoration: none;
   color: black;
-  font-size: 3rem;
-  right: 2rem;
-  top: 1rem;
-  position: absolute;
+  font-size: 2.2rem;
   cursor: pointer;
 }
 
 .projects {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
 }
 
 .project {
-  margin-left: 1rem;
-  width: 20rem;
-  height: 15rem;
-  background-color: var(--light-green);
-  padding: .2rem;
+  margin: 0 0 2rem 1rem;
+  width: 23rem;
+  height: 18rem + 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
-  border-radius: 5px;
+  text-align: left;
+  transition: .05s;
+  border-bottom: 5px solid transparent;
+}
+
+.icon-corner {
+  width: 3rem;
+  margin-bottom: .5rem;
+  align-self: flex-start;
+}
+
+.project:hover {
+  cursor: pointer;
+  border-bottom: 5px solid var(--light-purple);
+  transition: .05s;
 }
 
 .project-icon {
-  width: 19rem;
-  height: 10rem;
+  width: 23rem;
+  height: 12rem;
   object-fit: cover;
+  margin-bottom: 1rem;
 }
 
-.project-btn {
-  font-family: var(--font-txt);
+.project-description {
+  width: 100%;
+}
+
+/* footer */
+
+.footer {
+  height: 5rem;
+  background-color: var(--purple);
+  margin-top: 4rem;
+  display: flex;
   font-size: 1rem;
-  background-color: var(--silver-chalice);
-  border: none;
-  border-radius: 5px;
+  padding: 1rem;
+  align-items: center;
 }
 
-.project-btn a {
-  text-decoration: none;
-  color: black;
+.footer a {
+  font-size: 1.2rem;
+  margin-right: 1rem;
 }

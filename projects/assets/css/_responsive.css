@@ -1,0 +1,14 @@
+@media (min-width: 1369px) {
+  body {
+    height: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .projects {
+    flex-direction: column;
+  }
+  .project {
+    width: 90%;
+  }
+}

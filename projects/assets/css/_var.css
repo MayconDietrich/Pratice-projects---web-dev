@@ -1,9 +1,11 @@
 :root {
   --black: #170312;
-  --dark-purple: #33032f;
-  --purple: #531253;
-  --silver-chalice: #a0acad;
-  --light-green: #97d8b2;
+  --light-yellow: #f3c9b8;
+  --red: #F67280;
+  --light-purple: #C06C84;
+  --purple: #6C5B7B;
+  --blue: #355C7D;
 
   --font-txt: 'Poppins', sans-serif;
+  --font-title: 'Yellowtail', cursive;
 }
